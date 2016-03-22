@@ -12,9 +12,6 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$text-color-header: #FAFAFA;
-
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -23,13 +20,18 @@ $purple-color-600: #5E35B1;
 $purple-color-500: #673AB7;
 $purple-color-400: #7E57C2;
 
+$text-color:       $grey-color;
+$text-color-header: #FAFAFA;
+
 // Width of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+body {
+  color: $text-color;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -44,6 +46,5 @@ $on-laptop:        800px;
     }
 }
 
-@import
-  "home"
-;
+@import "home";
+@import "home/index";
