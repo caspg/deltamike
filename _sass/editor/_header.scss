@@ -1,0 +1,40 @@
+.editor-header {
+  background-color: #F5F5F5;
+  color: $purple-color-500;
+
+  nav {
+    margin: 0 15px;
+    min-height: 50px;
+  }
+
+  * {
+    margin-bottom: 0;
+  }
+
+  .navbar-brand {
+    a {
+      color: $purple-color-500;
+      text-decoration: none;
+
+      &:hover {
+        color: $purple-color-500;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        padding: 10px;
+        color: $grey-color-dark;
+        text-decoration: none;
+      }
+    }
+  }
+}
